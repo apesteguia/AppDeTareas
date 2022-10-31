@@ -17,7 +17,7 @@
       </h1>
       <h1 v-else="tareas.length != 0" style="font-size: 1.5rem; margin-top: 30px;">Tienes <span
           style="color: var(--enfasis);">{{
-              tareas.length
+          tareas.length
           }}</span> tareas pendientes</h1>
       <hr>
       <div class="uldiv">
@@ -28,10 +28,10 @@
                   v-model="item.check">
               </span>
               {{
-                  item.tarea
+              item.tarea
               }} |
               <span style="color: var(--enfasis); font-weight: bold;"> Para: </span> {{
-                  item.fecha
+              item.fecha
               }}
               <button @click="borrarItem(item)" class="button">X</button>
             </p>
@@ -236,5 +236,24 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 635px) {
+  .input {
+  width: 400px;}
+}
+
+@media (max-width: 411px) {
+  .input {
+  width: 300px;}
+}
+
+@media (max-width: 311px) {
+  .input {
+  width: 200px;
+  }
+  h1 {
+    font-size: 1rem;
+  }
 }
 </style>
