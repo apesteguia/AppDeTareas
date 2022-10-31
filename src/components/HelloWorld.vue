@@ -77,6 +77,7 @@ export default {
       this.tareas.push(elemento)
       console.log(this.tareas)
       this.i++
+      localStorage.setItem('datos', JSON.stringify(this.tareas));
     },
     borrarTodas() {
       this.tareas = []
@@ -98,6 +99,15 @@ export default {
         return true;
       }
       return false;
+    }
+  },
+  created: function () {
+    let datos = JSON.parse(localStorage.getItem('datos'));
+    if (datos === null) {
+      this.tareas = [];
+    }
+    else {
+      this.tareas = datos;
     }
   }
 }
