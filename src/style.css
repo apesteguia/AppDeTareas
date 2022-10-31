@@ -1,0 +1,12 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --background: rgb(36, 36, 36);
+  --background2: rgb(78, 78, 78);
+  --color: white;
+  --enfasis: rgb(59, 228, 124);
+  --borrar: rgb(214, 0, 0);
+}
+
+body {
+  background-color: var(--background);
+}
