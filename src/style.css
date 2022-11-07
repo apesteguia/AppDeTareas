@@ -5,6 +5,9 @@
   --color: white;
   --enfasis: rgb(59, 228, 124);
   --borrar: rgb(214, 0, 0);
+  --backlight: white;
+  --colorlight: black;
+  --background2light: grey;
 }
 
 body {
